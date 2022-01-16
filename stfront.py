@@ -1,6 +1,4 @@
-from statistics import quantiles
 import streamlit as st
-from annotated_text import annotated_text
 from random import choice as grand
 import gen
 

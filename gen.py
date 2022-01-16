@@ -1,4 +1,3 @@
-import pyperclip
 import csv
 from random import choice as grand
 import json
