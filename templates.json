@@ -2,9 +2,9 @@
     {
         "template": "{name} {marks} справляется с заданиями и материалом, демонстрирует {discipline} дисциплину. {name} {work_class} работает в классе и {work_home} дома. Стоит подчеркнуть {qualities}.{additional}",
         "marks_case":"ADV",
-        "class_case":"FACC",
+        "class_case":"ADV",
         "home_case":"ADV",
-        "discipline_case":"ADV"
+        "discipline_case":"FACC"
     },
     {
         "template": "{name} демонстрирует {marks} успеваемость. Работа в классе {work_class}, {work_home} работа дома. Поведение {discipline}. {name} среди своих качеств имеет {qualities}.{additional}",
