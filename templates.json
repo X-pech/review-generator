@@ -26,14 +26,14 @@
         "discipline_case":"ADV"
     },
     {
-        "template":"{name} имеет такие качества как {qualities}, а также {discipline} ведёт себя на уроках. С выполнением заданий в классе справлятеся {work_class}, по домашним заданиям ситуация {work_home}. В целом оценки {marks}.{additional}",
+        "template":"{name} имеет такие качества как {qualities}, а также {discipline} ведёт себя на уроках. С выполнением заданий в классе справляется {work_class}, по домашним заданиям ситуация {work_home}. В целом оценки {marks}.{additional}",
         "discipline_case":"ADV",
         "class_case":"ADV",
         "home_case":"FNOM",
         "marks_case":"MULNOM"
     },
     {
-        "template":"{name} {marks} осваивает программу, {discipline} ведёт себя на уроках. С заданиями в классе справляется {work_class}, а дома {work_home}. Нельзня не подчеркнуть такие качества как {qualities}.{additional}",
+        "template":"{name} {marks} осваивает программу, {discipline} ведёт себя на уроках. С заданиями в классе справляется {work_class}, а дома {work_home}. Нельзя не подчеркнуть такие качества как {qualities}.{additional}",
         "marks_case":"ADV",
         "discipline_case":"ADV",
         "class_case":"ADV",
