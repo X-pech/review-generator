@@ -18,14 +18,22 @@ class Review:
         self.fields = fields
         self.words = words
         
-    def set_word(self, field, case):
-        self.fields[field] = grand(self.words[self.fields[field]])[case]
+    def __get_random_word(self, field):
+        return grand(self.words[self.fields[field]])
+        
+    def set_word(self, field, case, used: set):
+        word = self.__get_random_word(field)
+        while word["ADV"] in used:
+            word = self.__get_random_word(field)
+        used.add(word["ADV"])
+        self.fields[field] = word[case]
         
     def __str__(self) -> str:
-        self.set_word("marks", self.template.marks_case)
-        self.set_word("work_home", self.template.home_case)
-        self.set_word("work_class", self.template.class_case)
-        self.set_word("discipline", self.template.discipline_case)
+        used = set()
+        self.set_word("marks", self.template.marks_case, used)
+        self.set_word("work_home", self.template.home_case, used)
+        self.set_word("work_class", self.template.class_case, used)
+        self.set_word("discipline", self.template.discipline_case, used)
         return self.template.template.format_map(self.fields)
         
 
