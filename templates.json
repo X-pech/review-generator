@@ -12,5 +12,31 @@
         "class_case":"FNOM",
         "home_case":"FNOM",
         "discipline_case":"MINOM"
+    },{
+        "template": "{name} {work_class} работает на уроках, поведение {discipline}. Выполнение ДЗ {work_home}. В целом успеваемость {marks}. {name} среди своих качеств имеет {qualities}.{additional}",
+        "class_case":"ADV",
+        "discipline_case":"MINOM",
+        "home_case":"MINOM",
+        "marks_case":"FNOM"
+    },{
+        "template":"{name} {work_class} выполняет задания, получаемые на занятиях, {work_home} выполняет домашние задания. Оценки в итоге {marks}. Очень здорово, что {name} имеет такие качества как {qualities}. На уроках ведёт себя {discipline}.{additional}",
+        "class_case":"ADV",
+        "home_case":"ADV",
+        "marks_case":"MULNOM",
+        "discipline_case":"ADV"
+    },
+    {
+        "template":"{name} имеет такие качества как {qualities}, а также {discipline} ведёт себя на уроках. С выполнением заданий в классе справлятеся {work_class}, по домашним заданиям ситуация {work_home}. В целом оценки {marks}.{additional}",
+        "discipline_case":"ADV",
+        "class_case":"ADV",
+        "home_case":"FNOM",
+        "marks_case":"MULNOM"
+    },
+    {
+        "template":"{name} {marks} осваивает программу, {discipline} ведёт себя на уроках. С заданиями в классе справляется {work_class}, а дома {work_home}. Нельзня не подчеркнуть такие качества как {qualities}.{additional}",
+        "marks_case":"ADV",
+        "discipline_case":"ADV",
+        "class_case":"ADV",
+        "home_case":"ADV"
     }
 ]
